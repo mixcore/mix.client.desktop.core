@@ -7,12 +7,20 @@ const routes: Routes = [
         path: '',
         component: HomeComponent
     },
-    { path: 'back-office', loadChildren: './app-portal/app-portal.module#AppPortalModule' }
+    {
+        path: 'back-office',
+        loadChildren: './app-portal/app-portal.module#AppPortalModule'
+    },
+    {
+        path: '',
+        redirectTo: 'back-office',
+        pathMatch: 'full',
+    }
 ];
 
 const config: ExtraOptions = {
     useHash: true,
-  };
+};
 
 @NgModule({
     imports: [RouterModule.forRoot(routes, config)],
