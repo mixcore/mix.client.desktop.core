@@ -1,7 +1,11 @@
-import { Component } from '@angular/core';
+import { Component, ViewChild } from '@angular/core';
 import { ElectronService } from '../providers/electron.service';
 import { TranslateService } from '@ngx-translate/core';
 import { AppConfig } from '../../environments/environment';
+
+
+import { PerfectScrollbarConfigInterface,
+  PerfectScrollbarComponent, PerfectScrollbarDirective } from 'ngx-perfect-scrollbar';
 
 @Component({
   selector: 'app-portal-root',
@@ -9,6 +13,13 @@ import { AppConfig } from '../../environments/environment';
   styleUrls: ['./app-portal.component.scss']
 })
 export class AppPortalComponent {
+
+
+  public config: PerfectScrollbarConfigInterface = {};
+
+  @ViewChild(PerfectScrollbarComponent) componentRef?: PerfectScrollbarComponent;
+  @ViewChild(PerfectScrollbarDirective) directiveRef?: PerfectScrollbarDirective;
+
   constructor(public electronService: ElectronService,
     private translate: TranslateService) {
 

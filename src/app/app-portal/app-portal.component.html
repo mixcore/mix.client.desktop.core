@@ -4,11 +4,13 @@
     <div class="row flex-xl-nowrap">
 
         <main-sidebar></main-sidebar>
-        <main class="ps py-md-3 px-md-2 sw-content w-100 position-relative" role="main" style="height: 90vh;">
-            <section class="content container-fluid">
-                <router-outlet></router-outlet>
-            </section>
-        </main>
+        <perfect-scrollbar>
+            <main class="py-md-3 px-md-2 sw-content w-100 position-relative" role="main" style="height: 90vh;">
+                <section class="content container-fluid">
+                    <router-outlet></router-outlet>
+                </section>
+            </main>
+        </perfect-scrollbar>
 
     </div>
 </div>
