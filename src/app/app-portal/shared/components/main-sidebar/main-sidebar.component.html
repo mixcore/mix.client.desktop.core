@@ -8,7 +8,8 @@
             data-target="#sw-docs-nav" aria-controls="sw-docs-nav" aria-expanded="false" aria-label="Toggle docs navigation">
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 30 30" width="30" height="30" focusable="false">
                 <title>Menu</title>
-                <path stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-miterlimit="10" d="M4 7h22M4 15h22M4 23h22"></path>
+                <path stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-miterlimit="10"
+                    d="M4 7h22M4 15h22M4 23h22"></path>
             </svg>
         </button>
         <input name="__RequestVerificationToken" type="hidden" value="CfDJ8KOuD896zE9FpXyo3z4qUnITyqLJObd-8sWCHWBMAbgKpoBDjCxTTaK-fn9pkbeyWi6aiOu15-1O4FCi0iYHV22A7_C_8nl1bjT9gWUpGWTRcxiso71cJhqbhcBxhsub88XHpqp3OAmg51CAe1EdWDBDA9MJ-Ei82UcnxV3Pa_P6peDY3ZqTytpkWhQlw7N7hA"
@@ -28,64 +29,45 @@
                 <div class="inner">
                     <div class="btn-group btn-group-sm" role="group" aria-label="Basic example">
                         <a class="btn btn-light" href="/vi-vn/portal/articles/create">
-                            <span class="mi mi-Add"></span>
-                        </a>
-                        <a class="btn btn-light" href="/vi-vn/portal/articles/index">
                             <span class="mi mi-List"></span>
                         </a>
-                        <a class="btn btn-light" href="/vi-vn/portal/articles/draft">
+                        <a class="btn btn-light" href="/vi-vn/portal/articles/index">
                             <span class="mi mi-Save"></span>
+                        </a>
+                        <a class="btn btn-light" href="/vi-vn/portal/articles/draft">
+                            <span class="mi mi-Preview"></span>
                         </a>
                         <a href="#" class="btn btn-light" data-toggle="collapse" data-target="#collapseArticleSubMenus"
                             role="button" aria-expanded="false" aria-controls="collapseArticleSubMenus">
-                            <span class="fas fa-chevron-right"></span>
+                            <span class="mi mi-ChevronRightSmall"></span>
                         </a>
                     </div>
                 </div>
                 <div class="sw-toc-link" data-toggle="collapse" data-target="#collapseArticleSubMenus" role="button"
                     aria-expanded="false" aria-controls="collapseArticleSubMenus">
-                    <i class="mi mi-ReadingList mi-lg mi-fw"></i>
-                    <span class="text">Articles</span>
+                    <i class="mi mi-CashDrawer mi-lg mi-fw"></i>
+                    <span class="text">Orders</span>
                 </div>
                 <ul id="collapseArticleSubMenus" class="collapse list-unstyled" role="tabpanel" data-parent="#sw-docs-nav">
                     <li>
                         <a class="sw-toc-sub-link mb-1" href="/vi-vn/portal/articles/create">
-                            <i class="mi mi-Add  mi-fw"></i>
-                            <span class="text">Create Article</span>
+                            <i class="mi mi-List  mi-fw"></i>
+                            <span class="text">All orders</span>
                         </a>
                     </li>
                     <li>
                         <a class="sw-toc-sub-link mb-1" href="/vi-vn/portal/articles/index">
-                            <i class="mi mi-List mi-fw"></i>
-                            <span class="text">List Article</span>
+                            <i class="mi mi-Save mi-fw"></i>
+                            <span class="text">Draft</span>
                         </a>
                     </li>
                     <li>
                         <a class="sw-toc-sub-link mb-1" href="/vi-vn/portal/articles/draft">
-                            <i class="mi mi-Save"></i>
-                            <span class="text">Draft</span>
+                            <i class="mi mi-Preview mi-fw"></i>
+                            <span class="text">Abandoned checkouts</span>
                         </a>
                     </li>
 
-                    <li class="hide-on-sb-inactive">
-                        <div class="sw-toc-sub-link mb-1">
-                            <i class="mi mi-ReadingList mi-fw"></i>
-                            <span class="text">Article...</span>
-                            <div class="inner">
-                                <div class="btn-group btn-group-sm" role="group" aria-label="Basic example">
-                                    <a class="btn btn-light">
-                                        <span class="mi mi-Add"></span>
-                                    </a>
-                                    <a class="btn btn-light">
-                                        <span class="mi mi-List"></span>
-                                    </a>
-                                    <a class="btn btn-light">
-                                        <span class="fas fa-pencil-alt"></span>
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-                    </li>
                 </ul>
             </li>
 
@@ -105,7 +87,7 @@
                         </a>
                         <a href="#" class="btn btn-light" data-toggle="collapse" data-target="#collapseProductSubMenus"
                             role="button" aria-expanded="false" aria-controls="collapseProductSubMenus">
-                            <span class="fas fa-chevron-right"></span>
+                            <span class="mi mi-ChevronRightSmall"></span>
                         </a>
                     </div>
                 </div>
@@ -115,45 +97,32 @@
                     <span class="text">Products</span>
                 </div>
                 <ul id="collapseProductSubMenus" class="collapse list-unstyled" role="tabpanel" data-parent="#sw-docs-nav">
-                    <li>
-                        <a class="sw-toc-sub-link mb-1" href="/vi-vn/portal/product/create">
-                            <i class="mi mi-Add mi-fw"></i>
-                            <span class="text">Create Product</span>
-                        </a>
-                    </li>
+
                     <li>
                         <a class="sw-toc-sub-link mb-1" href="/vi-vn/portal/product/index">
                             <i class="mi mi-List mi-fw"></i>
-                            <span class="text">List Product</span>
+                            <span class="text">All products</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a class="sw-toc-sub-link mb-1" href="/vi-vn/portal/product/create">
+                            <i class="mi mi-ImportAll mi-fw"></i>
+                            <span class="text">Transfers</span>
                         </a>
                     </li>
                     <li>
                         <a class="sw-toc-sub-link mb-1" href="/vi-vn/portal/product/draft">
-                            <i class="mi mi-Save"></i>
-                            <span class="text">Draft</span>
+                            <i class="mi mi-ShowAllFiles3Legacy mi-fw"></i>
+                            <span class="text">Inventory</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a class="sw-toc-sub-link mb-1" href="/vi-vn/portal/product/draft">
+                            <i class="mi mi-Folder mi-fw"></i>
+                            <span class="text">Collections</span>
                         </a>
                     </li>
 
-                    <li class="hide-on-sb-inactive">
-                        <div class="sw-toc-sub-link mb-1">
-                            <i class="mi mi-Package mi-fw"></i>
-                            <span class="text">Product...</span>
-
-                            <div class="inner">
-                                <div class="btn-group btn-group-sm" role="group" aria-label="Basic example">
-                                    <a class="btn btn-light">
-                                        <span class="mi mi-Add"></span>
-                                    </a>
-                                    <a class="btn btn-light">
-                                        <span class="mi mi-List"></span>
-                                    </a>
-                                    <a class="btn btn-light">
-                                        <span class="fas fa-pencil-alt"></span>
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-                    </li>
                 </ul>
             </li>
 
@@ -173,14 +142,14 @@
                         </a>
                         <a href="#" class="btn btn-light" data-toggle="collapse" data-target="#collapsePageSubMenus"
                             role="button" aria-expanded="false" aria-controls="collapsePageSubMenus">
-                            <span class="fas fa-chevron-right"></span>
+                            <span class="mi mi-ChevronRightSmall"></span>
                         </a>
                     </div>
                 </div>
                 <div class="sw-toc-link" data-toggle="collapse" data-target="#collapsePageSubMenus" role="button"
                     aria-expanded="false" aria-controls="collapsePageSubMenus">
-                    <i class="mi mi-Page mi-lg mi-fw"></i>
-                    <span class="text">Pages</span>
+                    <i class="mi mi-Emoji mi-lg mi-fw"></i>
+                    <span class="text">Customers</span>
                 </div>
                 <ul id="collapsePageSubMenus" class="collapse list-unstyled" role="tabpanel" data-parent="#sw-docs-nav">
                     <li>
@@ -237,14 +206,14 @@
                         </a>
                         <a href="#" class="btn btn-light" data-toggle="collapse" data-target="#collapseModuleSubMenus"
                             aria-expanded="false" aria-controls="collapseModuleSubMenus">
-                            <span class="fas fa-chevron-right"></span>
+                            <span class="mi mi-ChevronRightSmall"></span>
                         </a>
                     </div>
                 </div>
-                <div class="sw-toc-link" data-toggle="collapse" data-target="#collapseModuleSubMenus" aria-expanded="false"
-                    aria-controls="collapseModuleSubMenus">
-                    <i class="mi mi-ResolutionLegacy mi-lg mi-fw"></i>
-                    <span class="text">Modules</span>
+                <div class="sw-toc-link" data-toggle="collapse" data-target="#collapseModuleSubMenus"
+                    aria-expanded="false" aria-controls="collapseModuleSubMenus">
+                    <i class="mi mi-TwoBars mi-lg mi-fw"></i>
+                    <span class="text">Analytics</span>
                 </div>
                 <ul id="collapseModuleSubMenus" class="collapse list-unstyled" data-parent="#sw-docs-nav">
                     <li>
@@ -283,14 +252,14 @@
                         </a>
                         <a href="#" class="btn btn-light" data-toggle="collapse" data-target="#collapseAppearanceSubMenus"
                             aria-expanded="false" aria-controls="collapseAppearanceSubMenus">
-                            <span class="fas fa-chevron-right"></span>
+                            <span class="mi mi-ChevronRightSmall"></span>
                         </a>
                     </div>
                 </div>
-                <div class="sw-toc-link" data-toggle="collapse" data-target="#collapseAppearanceSubMenus" aria-expanded="false"
-                    aria-controls="collapseAppearanceSubMenus">
-                    <i class="mi mi-Personalize mi-lg mi-fw"></i>
-                    <span class="text">Themes</span>
+                <div class="sw-toc-link" data-toggle="collapse" data-target="#collapseAppearanceSubMenus"
+                    aria-expanded="false" aria-controls="collapseAppearanceSubMenus">
+                    <i class="mi mi-Marquee mi-lg mi-fw"></i>
+                    <span class="text">Promotions</span>
                 </div>
                 <ul id="collapseAppearanceSubMenus" class="collapse list-unstyled" data-parent="#sw-docs-nav">
                     <li>
@@ -329,87 +298,7 @@
                     </li>
                 </ul>
             </li>
-
-            <!-- MEDIA -->
-            <li class="sw-toc-item mt-1 mb-1">
-                <div class="inner">
-                    <div class="btn-group btn-group-sm" role="group" aria-label="Basic example">
-                        <a class="btn btn-light" href="/vi-vn/portal/media/index">
-                            <span class="fas fa-image"></span>
-                        </a>
-                        <a class="btn btn-light" href="/vi-vn/portal/file">
-                            <span class="fas fa-file"></span>
-                        </a>
-                        <a href="#" class="btn btn-light" data-toggle="collapse" data-target="#collapseFileSubMenus"
-                            aria-expanded="false" aria-controls="collapseFileSubMenus">
-                            <span class="fas fa-chevron-right"></span>
-                        </a>
-                    </div>
-                </div>
-                <div class="sw-toc-link" data-toggle="collapse" data-target="#collapseFileSubMenus" aria-expanded="false"
-                    aria-controls="collapseFileSubMenus">
-                    <i class="mi mi-Photo2 mi-lg mi-fw"></i>
-                    <span class="text">Media</span>
-                </div>
-                <ul id="collapseFileSubMenus" class="collapse list-unstyled" data-parent="#sw-docs-nav">
-                    <li>
-                        <a class="sw-toc-sub-link mb-1" href="/vi-vn/portal/media/index">
-                            <i class="mi mi-Photo2 mi-fw"></i>
-                            <span class="text">Library</span>
-                        </a>
-                    </li>
-                    <li>
-                        <a class="sw-toc-sub-link mb-1" href="/vi-vn/portal/file">
-                            <i class="mi mi-FileExplorer mi-fw"></i>
-                            <span class="text">Files</span>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="/vi-vn/portal/file?folder=%2FTemplates" class="sw-toc-sub-link mb-1">
-                            <i class="mi mi-Folder"></i>
-                            <span class="text">Templates</span>
-                        </a>
-                    </li>
-                </ul>
-            </li>
-
-            <!-- TEAM -->
-            <li class="sw-toc-item mt-1 mb-1">
-
-                <div class="inner">
-                    <div class="btn-group btn-group-sm" role="group" aria-label="Basic example">
-                        <a class="btn btn-light" href="/vi-vn/portal/team/create">
-                            <span class="mi mi-Add"></span>
-                        </a>
-                        <a class="btn btn-light" href="/vi-vn/portal/team">
-                            <span class="mi mi-List"></span>
-                        </a>
-                        <a href="#" class="btn btn-light" data-toggle="collapse" data-target="#collapseTeamSubMenus"
-                            aria-expanded="false" aria-controls="collapseTeamSubMenus">
-                            <span class="fas fa-chevron-right"></span>
-                        </a>
-                    </div>
-                </div>
-                <div class="sw-toc-link" data-toggle="collapse" data-target="#collapseTeamSubMenus" aria-expanded="false"
-                    aria-controls="collapseTeamSubMenus">
-                    <i class="mi mi-Contact mi-lg mi-fw"></i>
-                    <span class="text">Team</span>
-                </div>
-                <ul id="collapseTeamSubMenus" class="collapse list-unstyled" data-parent="#sw-docs-nav">
-                    <li>
-                        <a class="sw-toc-sub-link mb-1" href="/vi-vn/portal/team/create">
-                            <i class="mi mi-Add  mi-fw"></i>
-                            <span class="text">Create Member</span>
-                        </a>
-                    </li>
-                    <li>
-                        <a class="sw-toc-sub-link mb-1" href="/vi-vn/portal/team">
-                            <i class="mi mi-List mi-fw"></i>
-                            <span class="text">List Member</span>
-                        </a>
-                    </li>
-                </ul>
-            </li>
+            <hr>
 
             <!-- SETTING -->
             <li class="sw-toc-item mt-1 mb-1">
@@ -418,12 +307,12 @@
                     <div class="btn-group btn-group-sm" role="group" aria-label="Basic example">
                         <a href="#" class="btn btn-light" data-toggle="collapse" data-target="#collapseSettingSubMenus"
                             aria-expanded="false" aria-controls="collapseSettingSubMenus">
-                            <span class="fas fa-chevron-right"></span>
+                            <span class="mi mi-ChevronRightSmall"></span>
                         </a>
                     </div>
                 </div>
-                <div class="sw-toc-link" data-toggle="collapse" data-target="#collapseSettingSubMenus" aria-expanded="false"
-                    aria-controls="collapseSettingSubMenus">
+                <div class="sw-toc-link" data-toggle="collapse" data-target="#collapseSettingSubMenus"
+                    aria-expanded="false" aria-controls="collapseSettingSubMenus">
                     <i class="mi mi-Settings mi-lg mi-fw mi-spin"></i>
                     <span class="text">Settings</span>
                 </div>
